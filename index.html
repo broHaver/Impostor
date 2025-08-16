@@ -1677,15 +1677,15 @@ body.one-imp #revealArea .revealCard.big .revealWord.impostor {
   #revealOverlay.single .revealWord.impostor { animation: none !important; text-shadow: none !important; filter: none !important; }
 }
 </style>
+
 <link rel="manifest" href="./manifest.json">
 <meta name="theme-color" content="#ffffff">
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js');
-  });
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
 }
-</script></head>
+</script>
+</head>
 <body>
 
 
